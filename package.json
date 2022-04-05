@@ -1,0 +1,20 @@
+{
+  "name": "dumb-limiter",
+  "version": "0.0.1",
+  "description": "A very simple rate limiter.",
+  "main": "src/limiter.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pyrsmk/dumb-limiter.git"
+  },
+  "keywords": [
+    "async",
+    "rate",
+    "limit"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pyrsmk/dumb-limiter/issues"
+  },
+  "homepage": "https://github.com/pyrsmk/dumb-limiter#readme"
+}
