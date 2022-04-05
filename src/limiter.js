@@ -6,13 +6,15 @@ module.exports = interval => {
   const queue = []
 
   const unqueue = () => {
-    const resolve = queue.shift()
-    if (resolve) {
-      resolve()
+    const callback = queue.shift()
+    if (callback) {
+      callback()
     }
   }
 
   setInterval(unqueue, interval)
 
-  return () => new Promise(resolve => queue.push(resolve))
+  return callback => {
+    queue.push(callback)
+  }
 }
